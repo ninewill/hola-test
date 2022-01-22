@@ -109,6 +109,8 @@ distributionSubmitHandler(function(response){
             zip_id: form.area.value,
             remark: remark_text,
             gift: form.gift && form.gift.value,
+						sms_id: 8,
+						mail_id: $checkbox.data("mail_id")
           },
         })
           .done(function (response) {
